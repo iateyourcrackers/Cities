@@ -8,19 +8,7 @@ import java.util.HashMap; // import the HashMap class
  * @version (3/4/25)
  */
 public class Cities
-{
-    // instance variables
-    
-
-    /**
-     * Constructor for objects of class Cities
-     */
-    public Cities()
-    {
-        // initialise instance variables
-        
-    }
-    
+{   
     public static void main(String[] args) {
         // create bject called capCities of the hashmap class (dict)
         HashMap<String, String> capCities = new HashMap<String, String>();
@@ -42,5 +30,23 @@ public class Cities
         
         // check the hashmap size
         System.out.println(capCities.size());
+        
+        // Prints all keys
+        for (String i : capCities.keySet()) {
+            System.out.println(i);
+        }
+        
+        // Prints all values
+        for (String i : capCities.values()) {
+            System.out.println(i);
+        }
+        
+        // Loop through hashmap and print all countries that contains the letter 'A'
+        for (String i : capCities.keySet()) {
+            System.out.println("Key: " + i + ", Value: " + capCities.get(i));
+            if (i.toLowerCase().contains("a")) {
+                System.out.println("Country: " + i + ", Capital: " + capCities.get(i));
+            }
+        }
     }
 }
