@@ -1,14 +1,16 @@
+import java.util.HashMap; // import the HashMap class
 
 /**
  * Write a description of class Cities here.
+ * Practice hashmaps
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Hao Jessica Fu)
+ * @version (3/4/25)
  */
 public class Cities
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // instance variables
+    
 
     /**
      * Constructor for objects of class Cities
@@ -16,18 +18,21 @@ public class Cities
     public Cities()
     {
         // initialise instance variables
-        x = 0;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public static void main(String[] args) {
+        // create bject called capCities of the hashmap class (dict)
+        HashMap<String, String> capCities = new HashMap<String, String>();
+        
+        // Add keys and values (countries and capCities)
+        capCities.put("New Zealand", "Wellington");
+        capCities.put("Australia", "Canberra");
+        capCities.put("Germany", "Berlin");
+        capCities.put("Norway", "Oslo");
+        capCities.put("USA", "Washington DC");
+        
+        System.out.println(capCities);
+        System.out.println(capCities.get("New Zealand"));
     }
 }
