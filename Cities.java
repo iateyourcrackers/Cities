@@ -32,7 +32,15 @@ public class Cities
         capCities.put("Norway", "Oslo");
         capCities.put("USA", "Washington DC");
         
+        
+        System.out.println(capCities); // print all keys & values in the hashmap
+        System.out.println(capCities.get("New Zealand")); // print the passed in key's value
+        
+        // remove keys
+        capCities.remove("USA");
         System.out.println(capCities);
-        System.out.println(capCities.get("New Zealand"));
+        
+        // check the hashmap size
+        System.out.println(capCities.size());
     }
 }
